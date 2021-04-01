@@ -49,6 +49,7 @@
             android:layout_marginStart="10dp" />
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_content"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="@id/tv_name"
@@ -57,6 +58,37 @@
             android:textSize="14sp"
             android:textColor="@android:color/darker_gray"
             android:text="@string/content_text" />
+
+        <com.abby.customlayout.PhoneEditText
+            android:id="@+id/et_text"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:inputType="phone"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textSize="14dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/tv_content"
+            android:background="@drawable/shape_20_eeeeee"
+            app:layout_constraintStart_toStartOf="@id/iv_avatar"
+            app:layout_constraintEnd_toEndOf="@id/iv_share" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/phone_input_edit_text"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:inputType="phone"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textSize="14dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/et_text"
+            android:background="@drawable/shape_20_eeeeee"
+            app:layout_constraintStart_toStartOf="@id/iv_avatar"
+            app:layout_constraintEnd_toEndOf="@id/iv_share" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
